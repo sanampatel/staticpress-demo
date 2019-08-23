@@ -1,0 +1,255 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito|Poppins&display=swap);h1, h2, h3, h4, h5, h6 {
+	font-family: 'Poppins', sans-serif;
+}
+body {
+	font-family: 'Nunito', sans-serif;
+	color: #8b8b8b;
+	line-height: 1.8
+}
+.shadow {
+	box-shadow: 0 0 18px rgba(0,0,0,.05)
+}
+.uk-navbar-nav>li>a {
+	color: #333333;
+	font-family: 'Nunito', sans-serif;
+	padding-left: 17px;
+	padding-right: 17px;
+	font-size: 13px;
+	font-weight: 600;
+	text-transform: uppercase;
+	text-decoration: none;
+	zoom: 1;
+	letter-spacing: 1px;
+}
+.tag-img {
+	height: 17px;
+	margin-right: 5px
+}
+.user-img img{
+	border-radius: 50%;
+	margin-right: 15px
+}
+.heading-title {
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 1px;
+    position: relative;
+    margin-bottom: 28px;
+    overflow: hidden;
+}
+.catlists {
+	color: white
+}
+.heading-title-span {
+    display: block;
+    float: left;
+    margin-right: 15px;
+}
+.heading-title-divider {
+    border-color: #ec6a2a;
+    display: block;
+    border-top-width: 2px;
+    border-top-style: solid;
+    overflow: hidden;
+    margin-top: .5em;
+    width: 18px;
+}
+.social-icon {
+	color: #333
+}
+.icons:after {
+    content: "- - - - - - - - - - - - - - - - - - - - - - - - - - -";
+    margin-left: 30px;
+}
+.taglist, .categorylist  {
+	color: #959595;
+}
+.new-article {
+	margin-bottom: 30px
+}
+.taglist:hover, .categorylist:hover {
+	color: #ec6a2a;
+	text-decoration: none;
+}
+.meta {
+	text-transform: uppercase;
+	color: #959595;
+	display: inline-block;
+    margin-right: 25px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 12px
+}
+.meta:after {
+	border-color: #ec6a2a;
+    content: " ";
+    width: 10px;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    display: inline-block;
+    margin-left: 12px;
+}
+.uk-search-default {
+	width: 100%
+}
+.gdlr-core-media-image {
+    line-height: 0;
+    position: relative;
+}
+.akea-single-article .akea-single-article-thumbnail {
+    margin-bottom: 50px;
+}
+.akea-body * {
+    border-color: #e6e6e6;
+}
+.akea-media-image {
+    line-height: 0;
+    position: relative;
+}
+.gdlr-core-media-image {
+    line-height: 0;
+    position: relative;
+}
+.img-wrapper {
+    position: relative;
+    margin-bottom: 40px
+}
+.post-date {
+    font-size: 13px;
+    font-weight: 600;
+    padding: 20px;
+    border-radius: 50%
+}
+.date-wrapper {
+    background-color: #ffffff;
+    box-shadow: 0px 0px 25px rgba(0,0,0,0.15);
+    position: absolute;
+    bottom: -13px;
+    left: -15px
+}
+.linr-height {
+	line-height: 30px
+}
+.lead-title {
+	font-weight: 600;
+	font-size: 50px;
+}
+.light {
+	color: white
+}
+.dark {
+	color: #3e4852
+}
+.absolute {
+    position: absolute;
+    margin-top: -18px
+}
+.relative {
+    position: absolute;
+}
+.padding {
+	padding: 20px;
+}
+.navlist li:last-child {
+	border-bottom: none !important;
+}
+.navlist li:hover {
+	background: #f8f8f8
+}
+.navlist li a {
+	color: #b1abf5
+}
+.navlist li a:hover {
+	text-decoration: none;
+	color: #0f6ecd
+}
+#search {
+	border-radius: 5px;
+	background: #f8f8f8;
+	border: none;
+}
+.content {
+	    line-height: 35px;
+    font-size: 18px;
+}
+.btn {
+	background: #03c4eb;
+	border: none;
+	text-transform: capitalize;
+	font-size: 16px
+}
+.btn:hover {
+	background: #03c4eb;
+}
+.title-blue {
+	color: rgba(30,115,190,1)
+}
+.dark a{
+	color: #232323
+}
+.dark a:hover{
+	text-decoration: none;
+	color: rgba(30,115,190,1)
+}
+.paginator {
+	background: #eee;
+	padding: 10px 15px;
+}
+.paginator:hover {
+	text-decoration: none;
+}
+.article-title a{
+	color: #333
+}
+.article-title-main{
+	color: #333;
+	font-size: 40px
+}
+.lead-font {
+	font-size: 18px
+}
+.cat-title, .btn {
+	color: white;
+	border-radius: .25rem;
+    background: #b1abf5;
+    padding: 4px 12px;
+	margin-right: 10px
+}
+.cat-title:hover, .btn:hover {
+	text-decoration: none;
+	background: #bcdefa;
+}
+.alter-clr {
+	color: #b1abf5;
+}
+.alter-clr-2 {
+	color: #ec6a2a
+}
+.desc {
+	line-height: 26px
+}
+footer {
+	/*position: fixed;*/
+	left: 0;
+	bottom: 0;
+	width: 100%;
+}
+.font-extrabold:hover {
+	text-decoration: none;
+	color: #ec6a2a;
+}
+.alter-clr:hover {
+	text-decoration: none;
+}
+.heading {
+    font-size: 8rem;
+    margin-bottom: 0;
+    color: #e2e8ee;
+    font-weight: bold
+}
+.list-reset a{
+	color: #333 
+}

@@ -1,0 +1,45 @@
+backend:
+  name: github
+  repo: thakkarhiral/staticpress.io
+  branch: master
+  squash_merges: true
+publish_mode: editorial_workflow
+media_folder: source/imagess
+collections:
+  - name: "posts"
+    label: "Posts"
+    label_singular: "Post"
+    folder: "source/_posts"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string", default: "Title"}
+      - {label: "Author Name", name: "authorname", widget: "string", required: false}
+      - {label: "Date", name: "date", widget: "date"}
+      - {label: "SEOTitle", name: "seotitle", widget: "string", default: "SEO Title"}
+      - {label: "SEO Keywords", name: "seokeywords", widget: "string", default: SEO Keywords}
+      - {label: "SEO Description", name: "seodescription", widget: "string", default: SEO Description}
+      - {label: "Tags", name: "tags", widget: "list", required: false}
+      - {label: "Categories", name: "categories", widget: "list", required: false}
+      - {label: "Image Filename", name: "image", widget: "image", required: true}
+      - {label: "Author Image", name: "authorimage", widget: "image", required: false}
+      - {label: "Author Image", name: "authorimage", widget: "string", required: false}
+      - {label: "Comments", name: "comments", widget: "boolean", default: true}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "categories"
+    label: "Categories"
+    label_singular: "Category"
+    folder: "source/_categories"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string", default: "Title"}
+      - {label: "Image", name: "image", widget: "image"}
+  - name: "tags"
+    label: "Tags"
+    label_singular: "Tag"
+    folder: "source/_tags"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string", default: "Title"}
