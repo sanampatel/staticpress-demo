@@ -1,20 +1,16 @@
 {
-    "name": "tightenco/jigsaw-blog-template",
-    "description": "Blog starter template for Jigsaw static site generator by Tighten",
-    "keywords": ["blog", "starter", "template", "jigsaw", "static", "site", "generator"],
+    "name": "sanampatel/staticpress-demo",
+    "description": "StaticPress demo webiste build on Netlify CMS and Jigsaw staticsite generator",
+    "keywords": ["blog", "jigsaw", "netlify", "netlify cms", "staticpress", "demo"],
     "license": "MIT",
     "authors": [
         {
-            "name": "Anthony Terrell",
-            "email": "anthony@tighten.co"
+            "name": "Sanam Patel",
+            "email": "sanam@hencemedia.com"
         },
         {
-            "name": "Keith Damiani",
-            "email": "keith@tighten.co"
-        },
-        {
-            "name": "Matt Stauffer",
-            "email": "matt@tighten.co"
+            "name": "Hiral Thakkar",
+            "email": "hiral@allindiainvest.com"
         }
     ],
     "require": {
