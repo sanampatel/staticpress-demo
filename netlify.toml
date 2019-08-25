@@ -8,7 +8,7 @@
   PHP_VERSION = "7.2"
 
 [[redirects]]
-  from = "https://staticpress-demo.netlify.com"
-  to = "https://demo.staticpress.io"
+  from = "https://staticpress-demo.netlify.com/*"
+  to = "https://demo.staticpress.io/:splat"
   status = 301
   force = true

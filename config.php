@@ -3,7 +3,7 @@
 return [
 	'production' => false,
 	'google_analytic_code' => 'UA-23560239-19',
-	'disqus_code' => 'staticpress-demo',
+	'disqus_code' => 'static-press',
 	'title' => 'Netlify CMS jigsaw',
 	'mainUrl' => 'https://demo.staticpress.io',
 	'baseUrl' => 'https://demo.staticpress.io',

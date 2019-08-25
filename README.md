@@ -1,10 +1,19 @@
+<p align="center">
+  <a href="https://staticpress.io">
+    <img src="https://staticpress.io/assets/images/logo-large.png" width="400" />
+  </a>
+</p>
+
 # StaticPress Demo
----
-[![StaticPress](https://staticpress.io/assets/images/logo-large.png)](https://www.buymeacoffee.com/sanam)
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/50639642-c031-41c1-adfa-b2e840f821ae/deploy-status)](https://app.netlify.com/sites/staticpress-demo/deploys)
+<p align="center">
 
-[![Buy me a coffee](https://bmc-cdn.nyc3.digitaloceanspaces.com/BMC-button-images/custom_images/orange_img.png)](https://www.buymeacoffee.com/sanam)
+  <img src="https://api.netlify.com/api/v1/badges/50639642-c031-41c1-adfa-b2e840f821ae/deploy-status" alt="Netlify Status" />
+
+  <a href="https://www.buymeacoffee.com/sanam">
+    <img src="https://bmc-cdn.nyc3.digitaloceanspaces.com/BMC-button-images/custom_images/orange_img.png" alt="Buy me a coffee" />
+  </a>
+</p>
 
 This is demo blog of StaticPress
 
