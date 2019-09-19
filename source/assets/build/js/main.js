@@ -14770,8 +14770,8 @@ new Vue({
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\vagrant\code\staticpress - Copy\source\_assets\js\main.js */"./source/_assets/js/main.js");
-module.exports = __webpack_require__(/*! C:\vagrant\code\staticpress - Copy\source\_assets\sass\main.scss */"./source/_assets/sass/main.scss");
+__webpack_require__(/*! C:\vagrant\code\staticpress-demo\source\_assets\js\main.js */"./source/_assets/js/main.js");
+module.exports = __webpack_require__(/*! C:\vagrant\code\staticpress-demo\source\_assets\sass\main.scss */"./source/_assets/sass/main.scss");
 
 
 /***/ })

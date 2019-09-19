@@ -3,13 +3,13 @@
 return [
 	'production' => false,
 	'google_analytic_code' => 'UA-23560239-19',
-	'disqus_code' => 'static-press',
-	'title' => 'Netlify CMS jigsaw',
+	'disqus_code' => 'staticpress-demo',
+	'title' => 'Demo of StaticPress',
 	'mainUrl' => 'https://demo.staticpress.io',
 	'baseUrl' => 'https://demo.staticpress.io',
 	'siteAuthor' => 'Hence Media Pvt. Ltd.',
 	'site' => [
-		'title' => 'Netlify CMS Blog Template',
+		'title' => 'Demo of StaticPress',
 	],
 	'collections' => [
 		'posts' => [
@@ -39,17 +39,37 @@ return [
 				return $page->getFilename();
 			},
 		],
+		'settings' => [
+			'path' => 'settings/{filename}',
+			'extends' => '_layouts.master',
+			'section' => '',
+			'name' => function ($page) {
+				return $page->getFilename();
+			},
+		],
+		'customPages' => [
+			'path' => '{filename}',
+			'extends' => '_layouts.page',
+			'section' => '',
+			'name' => function ($page) {
+				return $page->getFilename();
+			},
+		],
+		'sliders' => [
+			'path' => 'sliders/{filename}',
+			'extends' => '_layouts.master',
+			'section' => '',
+			'name' => function ($page) {
+				return $page->getFilename();
+			},
+		],
 	],
+	'newnav' => file_get_contents('./source/navigation.json'),
 	'excerpt' => function ($page, $limit = 250, $end = '...') {
 		return $page->isPost
 			? str_limit_soft(content_sanitize($page->getContent()), $limit, $end)
 			: null;
 	},
-	'name' => function () {},
-	'getPrevious' => function () {},
-	'getNext' => function () {},
-	'getUrl' => function () {},
-	'count' => function () {},
     'url' => function ($page, $path) {
         return starts_with($path, 'http') ? $path : '/' . trimPath($path);
     },

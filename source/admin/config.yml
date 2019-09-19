@@ -1,31 +1,11 @@
 backend:
   name: github
-  repo: sanampatel/staticpress-demo
+  repo: thakkarhiral/staticpress.io
   branch: master
   squash_merges: true
 publish_mode: editorial_workflow
-media_folder: source/imagess
+media_folder: source/images
 collections:
-  - name: "posts"
-    label: "Posts"
-    label_singular: "Post"
-    folder: "source/_posts"
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - {label: "Title", name: "title", widget: "string", default: "Title"}
-      - {label: "Author Name", name: "authorname", widget: "string", required: false}
-      - {label: "Date", name: "date", widget: "date"}
-      - {label: "SEOTitle", name: "seotitle", widget: "string", default: "SEO Title"}
-      - {label: "SEO Keywords", name: "seokeywords", widget: "string", default: SEO Keywords}
-      - {label: "SEO Description", name: "seodescription", widget: "string", default: SEO Description}
-      - {label: "Tags", name: "tags", widget: "list", required: false}
-      - {label: "Categories", name: "categories", widget: "list", required: false}
-      - {label: "Image Filename", name: "image", widget: "image", required: true}
-      - {label: "Author Image", name: "authorimage", widget: "image", required: false}
-      - {label: "Author Image", name: "authorimage", widget: "string", required: false}
-      - {label: "Comments", name: "comments", widget: "boolean", default: true}
-      - {label: "Body", name: "body", widget: "markdown"}
   - name: "categories"
     label: "Categories"
     label_singular: "Category"
@@ -43,3 +23,76 @@ collections:
     slug: "{{slug}}"
     fields:
       - {label: "Title", name: "title", widget: "string", default: "Title"}
+  - name: "posts"
+    label: "Posts"
+    label_singular: "Post"
+    folder: "source/_posts"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string", default: "Title"}
+      - {label: "Author Name", name: "authorname", widget: "string", required: false}
+      - {label: "Date", name: "date", widget: "date"}
+      - {label: "SEOTitle", name: "seotitle", widget: "string", default: "SEO Title"}
+      - {label: "SEO Keywords", name: "seokeywords", widget: "string", default: SEO Keywords}
+      - {label: "SEO Description", name: "seodescription", widget: "string", default: SEO Description}
+      - {label: "Tags", name: "tags", widget: "relation", collection: 'tags', searchFields: ["title"], displayFields: ["title"], valueField: "title", multiple: true, default: ""}
+      - {label: "Categories", name: "categories", widget: "relation", collection: 'categories', searchFields: ["title"], displayFields: ["title"], valueField: "title", default: ""}
+      - {label: "Image Filename", name: "image", widget: "image", required: true}
+      - {label: "Author Image", name: "authorimage", widget: "image", required: false}
+      - {label: "Authorss", name: "authorss", widget: "markdown"}
+      - {label: "Comments", name: "comments", widget: "boolean", default: true}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "settings"
+    label: "Settings"
+    label_singular: "Setting"
+    folder: "source/_settings"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string", default: "Setting"}
+      - {label: "About author", name: "aboutauthor", widget: "string", default: "About author"}
+      - {label: "Post page title", name: "postpagetitle", widget: "string", default: "Post page title"}
+      - {label: "Custom Header", name: "customheader", widget: "markdown"}
+      - {label: "Custom Footer", name: "customfooter", widget: "markdown"}
+  - name: "pages"
+    label: "Pages"
+    label_singular: "Page"
+    folder: "source/_pages"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Permalink Override", name: "permalink", widget: "string"}
+      - {label: "Description", name: "description", widget: "string"}
+      - {label: "SEO title", name: "seotitle", widget: "string"}
+      - {label: "SEO keywords", name: "seokeywords", widget: "string"}
+      - {label: "SEO description", name: "seodescription", widget: "string"}
+  - label: "Sliders"
+    name: "sliders"
+    folder: "source/_sliders"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Images", name: "image", widget: "image"}
+  - label: "Nav"
+    name: "nav"
+    files:
+      - label: "Navigation"
+        name: "navigation"
+        delete: false
+        file: "source/navigation.json"
+        fields:
+          - label: "Items"
+            name: "items"
+            widget: "list"
+            fields:
+              - {label: "Text", name: "text", widget: string}
+              - {label: "Url", name: "url", widget: string}
+              - label: "MetaItems"
+                name: "metaitems"
+                widget: "list"
+                fields:
+                  - {label: "Text", name: "text", widget: string, required: false}
+                  - {label: "Url", name: "url", widget: string, required: false}

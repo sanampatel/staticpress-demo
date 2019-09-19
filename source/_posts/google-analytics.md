@@ -1,5 +1,6 @@
 ---
 title: Google Analytics
+authorname: Hence media
 date: 2019-07-12T05:51:27.362Z
 seotitle: Google Analytics
 seokeywords: 'Lorem, ipsum, dolor, sit, amet, consectetur'
@@ -9,11 +10,12 @@ seodescription: >-
 tags:
   - demo
   - staticpress
-categories:
-  - analytics
-image: /source/images/google-analytics.jpg
-authorimage: /source/images/author-img.jpeg
+categories: analytics
+isPosts: true
+image: /source/images/google-analytics.png
+smallimage: /source/images/small-google-analytics.png
 comments: true
+featured: false
 ---
 
 Google Analytics is digital analytics software. It's a web analytics service that allows you to analyze in-depth detail about the visitors on your website.

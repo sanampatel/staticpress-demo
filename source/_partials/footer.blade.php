@@ -1,18 +1,55 @@
-<footer class="uk-background-secondary uk-light uk-margin-medium-top">
-	<div class="uk-container uk-padding-small uk-text-center">
-		<small>
-			This project is maintained by <a href="https://netlify-jigsaw-template.netlify.com/">Hence Media Pvt. Ltd.</a>
-		</small>
+<p class="uk-text-right uk-margin-top">
+	<a href="#" class="uk-background-muted uk-padding-small uk-text-right">&uparrow;</a>
+</p>
+<footer class="uk-background-muted">
+	<div class="uk-container uk-text-center  uk-padding-small">
+		<small>Made with 
+			<span class="heart">&#x2665;</span>
+			Build on 
+			<a class="text-dark" href="https://tailwindcss.com/" target="_blank">
+				<span class="text-bold">Tailwindcss</span>
+			</a> 
+			using 
+			<a class="text-dark" href="https://staticpress.io" target="_blank">
+				<span class="text-bold">StaticPress</span>
+			</a>
+		</small>`
 	</div>
 </footer>
 
+{{-- Main.js --}}
+<script src="{{ $page->mainUrl }}/assets/build/js/main.js"></script>
 
-<script async src="https://www.googletagmanager.com/gtag/js?id={{ $page->google_analytic_code }}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.4.5/fuse.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+
+{{-- Customize footer scripts --}}
+@yield('footer-scripts')
+
+{{-- Identity redirect --}}
+<script>
+if (window.netlifyIdentity) {
+    window.netlifyIdentity.on('init', (user) => {
+        if (!user) {
+            window.netlifyIdentity.on('login', () => {
+                document.location.href = '/admin/';
+            });
+        }
+    });
+}
+</script>
+
+{{-- Identity-widget --}}
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+@include('_custom.footer')
+
 <script>
 	window.dataLayer = window.dataLayer || [];
 	function gtag(){dataLayer.push(arguments);}
 	gtag('js', new Date());
-	gtag('config', '{{ $page->google_analytic_code }}');
+	gtag('config', 'UA-23560239-19');
 
 	/**
 	*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
@@ -25,12 +62,10 @@
 	
 	(function() { // DON'T EDIT BELOW THIS LINE
 	var d = document, s = d.createElement('script');
-	s.src = 'https://{{ $page->disqus_code }}.disqus.com/embed.js';
+	s.src = 'https://static-press.disqus.com/embed.js';
 	s.setAttribute('data-timestamp', +new Date());
 	(d.head || d.body).appendChild(s);
 	})();
 </script>
-
-@yield('footer-scripts')
 </body>
 </html>

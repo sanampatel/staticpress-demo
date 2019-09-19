@@ -2,52 +2,56 @@
 
 @section('content')
 
-<div class="uk-container uk-container-small uk-section">
-	<div class="article">
-		<h2 class="article-title-main uk-text-bold">
-			{{ ucwords($page->title) }}
-		</h2>
-		<p>
-			<div class="uk-inline meta">
-				<span class="user-img">
-					<img src="{{ $page->mainUrl }}/images/{{ basename($page->authorimage) }}">
-				</span> {{ $page->author }}
-			</div>
-			<div class="uk-inline meta">
-				<img class="tag-img" src="{{ $page->mainUrl }}/assets/images/tag.png">
-				@if ($page->tags)
-					@foreach ($page->tags as $i => $tag)
-						<a class="taglist" 
-							href="{{ '/tags/' . $tag }}"
-							title="View posts in {{ $tag }}"
-						>{{ ucwords($tag) }},
-						</a>
-					@endforeach
+<div class="uk-container uk-section">
+	<div uk-grid>
+		<div class="uk-width-2-3">
+			<article class="article">
+				<h2 class="article-title-main uk-text-bold">
+					{{ ucwords($page->title) }}
+				</h2>
+				<p>
+					<div class="uk-inline meta">
+						<img class="tag-img" src="{{ $page->mainUrl }}/assets/images/calendar.png"> {{ date('M j, Y', $page->date) }}
+					</div>
+					@if ($page->author)
+					<div class="uk-inline meta">
+						<img class="tag-img" src="{{ $page->mainUrl }}/assets/images/user.png"> {{ $page->author }}
+					</div>
+					@endif
+					<div class="uk-inline meta">
+						<img class="tag-img" src="{{ $page->mainUrl }}/assets/images/tag.png">
+						@if ($page->tags)
+							@foreach ($page->tags as $i => $tag)
+								<a class="taglist" 
+									href="{{ '/tags/' . $tag }}"
+									title="View posts in {{ $tag }}"
+								>{{ ucwords($tag) }}
+								</a>
+								 @if (! $loop->last)
+									,
+								@endif
+							@endforeach
+						@endif
+					</div>
+					<div class="uk-inline meta">
+						<img class="tag-img" src="{{ $page->mainUrl }}/assets/images/category.png">
+						@if ($page->categories)
+							<a href="/categories/{{ $page->categories }}" title="View posts in - {{ $page->categories }}" class="categorylist">
+								{{ ucwords($page->categories) }}	
+							</a>
+						@endif
+					</div>
+				</p>
+				@if ($page->image)
+					<img src="{{ $page->mainUrl }}/images/{{ basename($page->image) }}">
 				@endif
-			</div>
-			<div class="uk-inline meta">
-				<img class="tag-img" src="{{ $page->mainUrl }}/assets/images/category.png">
-				@if ($page->categories)
-					@foreach ($page->categories as $i => $category)
-						<a class="categorylist" 
-							href="{{ '/categories/' . $category }}"
-							title="View posts in {{ $category }}"
-						>{{ ucwords($category) }}
-						</a>
-					@endforeach
-				@endif
-			</div>
-		</p>
-		@if ($page->image)
-			<div class="img-wrapper">
-				<img src="{{ $page->mainUrl }}/images/{{ basename($page->image) }}">
-				<div class="date-wrapper">
-					<span class="post-date">{{ date('M j, Y', $page->date) }}</span> 
+				<div class="line-height uk-margin">
+					@yield('postContent')
 				</div>
-			</div>
-		@endif
-		<div class="line-height">
-			@yield('postContent')
+			</article>
+		</div>
+		<div class="uk-width-1-3">
+			@include('_partials.sidebar')
 		</div>
 	</div>
 	<nav class="uk-margin-medium-top" uk-grid>

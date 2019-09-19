@@ -8,6 +8,6 @@
 	<script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
-	<script src="https://unpkg.com/netlify-cms@2.9.1/dist/netlify-cms.js"></script>
+	<script src="https://unpkg.com/netlify-cms@2.1.1/dist/netlify-cms.js"></script>
 </body>
 </html>

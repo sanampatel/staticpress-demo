@@ -1,5 +1,6 @@
 ---
 title: Disqus Comments
+authorname: Hence media
 date: 2019-07-12T00:00:00.000Z
 seotitle: Disqus Comments
 seokeywords: 'Lorem, ipsum, dolor, sit, amet, consectetur'
@@ -9,15 +10,14 @@ seodescription: >-
 tags:
   - demo
   - disqus
-categories:
-  - comment
-image: /source/images/blog-post.jpeg
-authorimage: /source/images/author-img.jpeg
+categories: comment
+isPosts: true
+image: /source/images/disqus.png
+smallimage: /source/images/small-disqus.png
 comments: true
+featured: false
 ---
 
-Netlify CMS *Static + content management*. 
+DISQUS (pronounced discuss) is a global blog commenting system. 
 
-Netlify CMS is based on client-side JavaScript, reusable APIs and prebuilt Markup.
-
-You can edit the content by changing at [Staticpress demo admin panel](https://demo.staticpress.io/admin/).
+It consolidates the comments you make on other blogs and the comments you get on your own blog into one easy to manage dashboard. It becomes very easy for commenters to chat with each other and you, and that's a win for your blog

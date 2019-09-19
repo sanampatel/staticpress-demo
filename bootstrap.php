@@ -5,7 +5,6 @@ $events->afterBuild(App\Listeners\GenerateIndex::class);
 
 use TightenCo\Jigsaw\Jigsaw;
 
-
 function content_sanitize($value)
 {
     return str_replace(["\r", "\n", "\r\n"], ' ', strip_tags($value));
@@ -35,7 +34,6 @@ function posts_filter_cat($posts, $category)
     });
 }
 
-
 function get_setting($settings, $key)
 {
     return $settings->filter(function ($setting) use ($key) {
@@ -51,4 +49,3 @@ function get_header($headers, $key)
         return collect($header->keys)->contains($key->name());
     });
 }
-
