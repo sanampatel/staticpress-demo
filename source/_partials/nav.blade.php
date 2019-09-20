@@ -11,7 +11,7 @@
 			<div class="uk-navbar-right">
 				<ul class="uk-navbar-nav">
 					
-					<li>						
+					{{-- <li>						
 						@php
 							$nav_json_content = file_get_contents('./source/navigation.json');
 							$arr =json_decode($nav_json_content, true);							 
@@ -40,7 +40,7 @@
 								</li>
 							@endforeach
 						</ul>
-					</li>
+					</li> --}}
 					<li>
 						<a class="uk-padding-remove-right">
 							<div id="vue-search">
