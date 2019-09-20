@@ -56,16 +56,19 @@ body {
 }
 .uk-label {
     display: inline-block;
-    padding: 2px;
+    padding: 4px;
     background: #1e87f0;
-    line-height: 1.5;
+    line-height: 1.7;
     font-size: .875rem;
     color: #fff;
     vertical-align: middle;
     white-space: nowrap;
-    border-radius: 2px;
+    border-radius: 0px;
     margin: 5px 4px;
-    text-transform: capitalize;
+    text-transform: uppercase;
+}
+.list-cat:hover .cat {
+    color: #ec6a2a;
 }
 .taglist, .categorylist  {
 	color: #959595;
