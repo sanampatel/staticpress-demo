@@ -2,7 +2,7 @@
 	<div class="uk-padding uk-padding-remove-horizontal uk-padding-remove-top">
 		@if ($post->image)
     		<div class="img-wrapper">
-                <img src="{{ $post->mainUrl }}/images/{{ basename($post->image) }}">
+                <img class="border" src="{{ $post->mainUrl }}/images/{{ basename($post->image) }}">
                 <div class="date-wrapper">
                     <span class="post-date">{{ date('M j, Y', $post->date) }}</span> 
                 </div>

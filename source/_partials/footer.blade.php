@@ -1,24 +1,24 @@
 <p class="uk-text-right uk-margin-top">
 	<a href="#" class="uk-background-muted uk-padding-small uk-text-right">&uparrow;</a>
 </p>
-<footer class="uk-background-muted">
-	<div class="uk-container uk-text-center  uk-padding-small">
-		<small>Made with 
-			<span class="heart">&#x2665;</span>
-			Build on 
-			<a class="text-dark" href="https://tailwindcss.com/" target="_blank">
-				<span class="text-bold">Tailwindcss</span>
-			</a> 
+<footer class="blog-footer uk-background-muted uk-padding-small">
+	<div class="uk-container uk-text-center uk-text-small">
+		<span class="span">
+		    Made with <i class="fa pulse">&#x2665;</i>
+		    Built on 
+			<a class="text-dark" href="https://getuikit.com/" target="_blank">
+				<span class="text-bold">UIKIT</span>
+			</a>
 			using 
 			<a class="text-dark" href="https://staticpress.io" target="_blank">
 				<span class="text-bold">StaticPress</span>
 			</a>
-		</small>`
+		</span>
 	</div>
 </footer>
 
 {{-- Main.js --}}
-<script src="{{ $page->mainUrl }}/assets/build/js/main.js"></script>
+<script src="{{ $page->mainUrl }}/asset/build/js/main.js"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.4.5/fuse.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js"></script>

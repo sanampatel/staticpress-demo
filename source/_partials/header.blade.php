@@ -47,7 +47,7 @@
 	@include('_custom.header')
 
 	{{-- Custom CSS --}}
-	<link rel="stylesheet" href="{{ $page->mainUrl }}/assets/build/css/main.css">
+	<link rel="stylesheet" href="{{ $page->mainUrl }}/asset/build/css/main.css">
 </head>
 <body>
 	

@@ -43,7 +43,7 @@
 					</div>
 				</p>
 				@if ($page->image)
-					<img src="{{ $page->mainUrl }}/images/{{ basename($page->image) }}">
+					<img class="border" src="{{ $page->mainUrl }}/images/{{ basename($page->image) }}">
 				@endif
 				<div class="line-height uk-margin">
 					@yield('postContent')
