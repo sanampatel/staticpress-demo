@@ -3,7 +3,7 @@
 				<ul class="uk-navbar-nav">
 					<li>
 						<a href="/" class="uk-padding-remove-left">
-							<img src="{{ $page->mainUrl }}/assets/images/logo.png">
+							<img src="{{ $page->mainUrl }}/asset/images/logo.png">
 						</a>
 					</li>
 				</ul>

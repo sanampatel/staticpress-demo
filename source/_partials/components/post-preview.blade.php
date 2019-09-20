@@ -24,7 +24,7 @@
 			@endif
 
 			<div class="uk-inline meta">
-                <img class="tag-img" src="{{ $post->mainUrl }}/assets/images/tag.png">
+                <img class="tag-img" src="{{ $post->mainUrl }}/asset/images/tag.png">
                 @if ($post->tags)
                     @foreach ($post->tags as $i => $tag)
                         <a class="taglist" 
@@ -39,7 +39,7 @@
                 @endif
             </div>
             <div class="uk-inline meta">
-                <img class="tag-img" src="{{ $post->mainUrl }}/assets/images/category.png">
+                <img class="tag-img" src="{{ $post->mainUrl }}/asset/images/category.png">
                 @if ($post->categories)
                     <a href="/categories/{{ $post->categories }}" title="View posts in - {{ $post->categories }}" class="categorylist">
 						{{ ucwords($post->categories) }}	

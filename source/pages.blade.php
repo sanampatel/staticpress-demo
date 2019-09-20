@@ -14,7 +14,7 @@ pagination:
 		    @foreach($customPages as $customPage)
 		    	<li>
 		    		<a href="{{ $customPage->link }}" style="color: #232323">
-		    			<img class="uk-margin-small-right" src="{{ $page->mainUrl }}/assets/images/menu.png" style="height: 20px"> <span>{{ $customPage->title }}</span>
+		    			<img class="uk-margin-small-right" src="{{ $page->mainUrl }}/asset/images/menu.png" style="height: 20px"> <span>{{ $customPage->title }}</span>
 		    		</a>
 		    	</li>
 		    @endforeach

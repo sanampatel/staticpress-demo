@@ -11,15 +11,15 @@
 				</h2>
 				<p>
 					<div class="uk-inline meta">
-						<img class="tag-img" src="{{ $page->mainUrl }}/assets/images/calendar.png"> {{ date('M j, Y', $page->date) }}
+						<img class="tag-img" src="{{ $page->mainUrl }}/asset/images/calendar.png"> {{ date('M j, Y', $page->date) }}
 					</div>
 					@if ($page->author)
 					<div class="uk-inline meta">
-						<img class="tag-img" src="{{ $page->mainUrl }}/assets/images/user.png"> {{ $page->author }}
+						<img class="tag-img" src="{{ $page->mainUrl }}/asset/images/user.png"> {{ $page->author }}
 					</div>
 					@endif
 					<div class="uk-inline meta">
-						<img class="tag-img" src="{{ $page->mainUrl }}/assets/images/tag.png">
+						<img class="tag-img" src="{{ $page->mainUrl }}/asset/images/tag.png">
 						@if ($page->tags)
 							@foreach ($page->tags as $i => $tag)
 								<a class="taglist" 
@@ -34,7 +34,7 @@
 						@endif
 					</div>
 					<div class="uk-inline meta">
-						<img class="tag-img" src="{{ $page->mainUrl }}/assets/images/category.png">
+						<img class="tag-img" src="{{ $page->mainUrl }}/asset/images/category.png">
 						@if ($page->categories)
 							<a href="/categories/{{ $page->categories }}" title="View posts in - {{ $page->categories }}" class="categorylist">
 								{{ ucwords($page->categories) }}	
