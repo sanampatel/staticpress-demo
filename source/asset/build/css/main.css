@@ -17,7 +17,7 @@ body {
 }
 /*Heading*/
 .heading {
-    font-size: 8rem;
+    font-size: 6rem;
     margin-bottom: 0;
     color: #e2e8ee;
     font-weight: bold
@@ -27,7 +27,8 @@ body {
 }
 .article-title a{
 	color: #333;
-	font-size: 1.3rem
+	font-size: 1.3rem;
+    font-weight: bold
 }
 .article-title-main{
 	color: #333;
@@ -52,6 +53,19 @@ body {
     border-bottom-style: solid;
     display: inline-block;
     margin-left: 12px;
+}
+.uk-label {
+    display: inline-block;
+    padding: 2px;
+    background: #1e87f0;
+    line-height: 1.5;
+    font-size: .875rem;
+    color: #fff;
+    vertical-align: middle;
+    white-space: nowrap;
+    border-radius: 2px;
+    margin: 5px 4px;
+    text-transform: capitalize;
 }
 .taglist, .categorylist  {
 	color: #959595;
@@ -82,7 +96,7 @@ body {
 
 /*Heading og category and tag*/
 .heading-title {
-    font-size: 13px;
+    font-size: 15px;
     text-transform: uppercase;
     font-weight: 800;
     letter-spacing: 1px;
@@ -163,8 +177,8 @@ span .fa {
     color: #E90606;
     margin: 0 3px;
     font-size: 20px;
-    animation: pound 0.35s infinite alternate;
-    -webkit-animation: pound 0.35s infinite alternate;
+    animation: pound 0.50s infinite alternate;
+    -webkit-animation: pound 0.50s infinite alternate;
 }
 
 @-webkit-keyframes pound {
