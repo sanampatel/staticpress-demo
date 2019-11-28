@@ -1,5 +1,11 @@
 @extends('_layouts.master')
 
+@section('head')
+	<title>{{ seo("category", ucwords($page->name()), "", "", "") }} | {{ $page->siteAuthor }}</title>
+	<meta name="keywords" content="Tag, {{ seo("category", $page->name(), "", "", "") }}, {{ seo("category", $page->name(), "", "", "") }} category">
+	<meta name="description" content="Post under category {{ seo("category", $page->name(), "", "", "") }}.">
+@endsection
+
 @section('content')
 	<div class="uk-container uk-section">
 		<div uk-grid>

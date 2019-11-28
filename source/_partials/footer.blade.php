@@ -18,6 +18,9 @@
 </footer>
 
 {{-- Main.js --}}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.5/js/uikit.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.5/js/uikit-icons.min.js"></script>
+
 <script src="{{ $page->mainUrl }}/asset/build/js/main.js"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.4.5/fuse.min.js"></script>

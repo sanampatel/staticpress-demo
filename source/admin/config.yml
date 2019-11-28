@@ -51,6 +51,9 @@ collections:
     slug: "{{slug}}"
     fields:
       - {label: "Title", name: "title", widget: "string", default: "Setting"}
+      - {label: "SEOTitle", name: "seotitle", widget: "string", default: "SEO Title"}
+      - {label: "SEO Keywords", name: "seokeywords", widget: "string", default: SEO Keywords}
+      - {label: "SEO Description", name: "seodescription", widget: "string", default: SEO Description}
       - {label: "About author", name: "aboutauthor", widget: "string", default: "About author"}
       - {label: "Post page title", name: "postpagetitle", widget: "string", default: "Post page title"}
       - {label: "Custom Header", name: "customheader", widget: "markdown"}
@@ -68,6 +71,7 @@ collections:
       - {label: "SEO title", name: "seotitle", widget: "string"}
       - {label: "SEO keywords", name: "seokeywords", widget: "string"}
       - {label: "SEO description", name: "seodescription", widget: "string"}
+      - {label: "Description", name: "description", widget: "markdown"}
   - label: "Sliders"
     name: "sliders"
     folder: "source/_sliders"

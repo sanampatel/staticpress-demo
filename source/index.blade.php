@@ -5,6 +5,12 @@ pagination:
 ---
 @extends('_layouts.master')
 
+@section('head')
+    <title>{{ $settings->setting->seotitle}} | {{ $settings->setting->tagline }}</title> 
+    <meta name="keywords" content="{{ $settings->setting->seokeywords }}">
+    <meta name="description" content="{{ $settings->setting->seodescription }}">
+@endsection
+
 @section('content')
     <div class="uk-container uk-section">
         <div class="uk-margin uk-text-left">
