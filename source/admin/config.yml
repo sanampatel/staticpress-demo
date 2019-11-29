@@ -33,7 +33,9 @@ collections:
       - {label: "Title", name: "title", widget: "string", default: "Title"}
       - {label: "Author Name", name: "authorname", widget: "string", required: false}
       - {label: "Date", name: "date", widget: "date"}
-
+      - {label: "SEOTitle", name: "seotitle", widget: "string", default: "SEO Title"}
+      - {label: "SEO Keywords", name: "seokeywords", widget: "string", default: SEO Keywords}
+      - {label: "SEO Description", name: "seodescription", widget: "string", default: SEO Description}
   - name: "settings"
     label: "Settings"
     label_singular: "Setting"
