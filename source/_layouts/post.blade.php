@@ -1,11 +1,11 @@
 @extends('_layouts.master')
 
 @section('head')
-	<title>{{ $page->title ? $page->title : $settings->setting->seotitle}} | {{ $page->siteAuthor }}</title>
+	<title>{{ $page->seotitle ? $page->seotitle : $page->title}} | {{ $page->sitename }}</title>
 
-	<meta name="keywords" content="{{ seo("post", $page->tags, $page->categories, $page->title, "keywords") }}">
+	<meta name="keywords" content="{{ $page->seokeywords ? $page->seokeywords : seo("post", $page->tags, $page->categories, $page->title, "keywords") }}">
 
-	<meta name="description" content="{{ seo("post", "", "", $page->description, "description") }}">
+	<meta name="description" content="{{ $page->seodescription ? $page->seodescription : seo("post", "", "", $page->description, "description") }}">
 @endsection
 
 @section('content')

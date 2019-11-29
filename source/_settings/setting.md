@@ -3,5 +3,8 @@ aboutauthor: This section is for adding information about author. You can add im
 postpagetitle: Posts
 customheader:
 customfooter: 
+seotitle: Demo Blog
+seokeywords: Demo Blog, StaticPress Demo Blog, StaticPress, Blog
+seodescription: This is Demo Post of StaticPress.
 
 ---

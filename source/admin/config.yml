@@ -38,10 +38,10 @@ collections:
       - {label: "SEO Description", name: "seodescription", widget: "string", default: SEO Description}
       - {label: "Tags", name: "tags", widget: "relation", collection: 'tags', searchFields: ["title"], displayFields: ["title"], valueField: "title", multiple: true, default: ""}
       - {label: "Categories", name: "categories", widget: "relation", collection: 'categories', searchFields: ["title"], displayFields: ["title"], valueField: "title", default: ""}
+      - {label: "Is Posts", name: "isPosts", widget: "boolean", default: true}
       - {label: "Image Filename", name: "image", widget: "image", required: true}
-      - {label: "Author Image", name: "authorimage", widget: "image", required: false}
-      - {label: "Authorss", name: "authorss", widget: "markdown"}
       - {label: "Comments", name: "comments", widget: "boolean", default: true}
+      - {label: "Description", name: "description", widget: "markdown"}
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "settings"
     label: "Settings"
@@ -68,7 +68,7 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Permalink Override", name: "permalink", widget: "string"}
       - {label: "Description", name: "description", widget: "string"}
-      - {label: "SEO title", name: "seotitle", widget: "string"}
+      - {label: "SEOTitle", name: "seotitle", widget: "string"}
       - {label: "SEO keywords", name: "seokeywords", widget: "string"}
       - {label: "SEO description", name: "seodescription", widget: "string"}
       - {label: "Description", name: "description", widget: "markdown"}

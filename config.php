@@ -4,12 +4,13 @@ return [
 	'production' => false,
 	'google_analytic_code' => 'UA-23560239-19',
 	'disqus_code' => 'staticpress-demo',
-	'title' => 'Demo of StaticPress',
+	'sitename' => 'StaticPress',
+	'title' => 'StaticPress',
 	'mainUrl' => 'https://demo.staticpress.io',
 	'baseUrl' => 'https://demo.staticpress.io',
-	'siteAuthor' => 'Hence Media Pvt. Ltd.',
+	'siteAuthor' => 'Hence Media',
 	'site' => [
-		'title' => 'Demo of StaticPress',
+		'title' => 'StaticPress',
 	],
 	'collections' => [
 		'posts' => [

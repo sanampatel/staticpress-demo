@@ -49,3 +49,99 @@ function get_header($headers, $key)
         return collect($header->keys)->contains($key->name());
     });
 }
+
+function senitize_url($url) {
+    $new_url = str_replace(" ","-", $url);
+    $new_url = str_replace("  ","-", $new_url);
+    $new_url = str_replace("- ","-", $new_url);
+    $new_url = str_replace(" -","-", $new_url);
+    $new_url = str_replace(" - ","-", $new_url);
+    return $new_url;
+}
+
+function seo_keywords($title, $tags, $category) {
+    $keywords = "";
+    $keywords .= $title;
+
+    if (!empty($tags)) {
+
+        if (is_array ($tags)) {
+
+            foreach ($tags as $key => $tag) {
+                $keywords .= ", " . $tag;
+            }
+
+        }
+        else {
+            $keywords .= $tags;
+        }
+    }
+
+    if (!empty($category)) {
+
+        $keywords .= ", " . $category;
+
+    }
+
+    return $keywords;
+}
+  
+function string_count($str, $counter = 160) {
+ 
+        $out_str = "";
+        $count = 0;
+
+        if (strlen($str) < $counter) {
+            return $str;
+        }
+  
+        $words = explode(" ", $str);
+
+        foreach ($words as $word) {
+          
+            $word_len = strlen(trim($word));
+            $count += $word_len;
+          
+            $finalcount = strlen($out_str) + $word_len;
+            
+          if($finalcount <= $counter) {
+
+            $out_str .= " " . $word;
+
+          } else {
+            
+            return $out_str;
+
+        }
+    }
+}
+
+function seo($type, $tags, $category, $title, $return) {
+
+    if ($type == "post" && $return == "keywords") {
+        return seo_keywords($title, $tags, $category);
+    }
+
+    elseif ($type == "post" && $return == "description") {
+        return string_count($title);
+    }
+
+    elseif ($type == "tag") {
+        return seo_keywords($title, $tags, $category);
+    }
+
+    elseif ($type == "category") {
+        return seo_keywords($title, $tags, $category);
+    }
+}
+
+function indian_number_format($num){
+    $num=explode('.',$num);
+    $dec=(count($num)==2)?'.'.$num[1]:'';
+    $num = (string)$num[0];
+    if( strlen($num) < 4) return $num;
+    $tail = substr($num,-3);
+    $head = substr($num,0,-3);
+    $head = preg_replace("/\B(?=(?:\d{2})+(?!\d))/",",",$head);
+    return $head.",".$tail.$dec;
+}

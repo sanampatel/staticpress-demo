@@ -6,7 +6,7 @@ pagination:
 @extends('_layouts.master')
 
 @section('head')
-    <title>{{ $page->seotitle ? $page->seotitle : $settings->setting->seotitle}} | {{ $page->siteAuthor }}</title>
+    <title>{{ $page->seotitle }}</title>
 	
 	<meta name="keywords" content="{{ $page->seokeywords ? $page->seokeywords : $settings->setting->seokeywords }}">
 	<meta name="description" content="{{ $page->seodescription ? $page->seodescription : $settings->setting->seodescription }}">
