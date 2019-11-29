@@ -47,7 +47,7 @@ collections:
     label: "Settings"
     label_singular: "Setting"
     folder: "source/_settings"
-    create: true
+    create: false
     slug: "{{slug}}"
     fields:
       - {label: "Title", name: "title", widget: "string", default: "Setting"}
@@ -58,10 +58,10 @@ collections:
       - {label: "Post page title", name: "postpagetitle", widget: "string", default: "Post page title"}
       - {label: "Custom Header", name: "customheader", widget: "markdown"}
       - {label: "Custom Footer", name: "customfooter", widget: "markdown"}
-  - name: "pages"
-    label: "Pages"
-    label_singular: "Page"
-    folder: "source/_pages"
+  - name: "customPages"
+    label: "CustomPages"
+    label_singular: "CustomPages"
+    folder: "source/_customPages"
     create: true
     slug: "{{slug}}"
     fields:
