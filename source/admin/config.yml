@@ -1,6 +1,23 @@
+Skip to content
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@thakkarhiral 
+1
+00sanampatel/staticpress-tailwind
+ Code Issues 0 Pull requests 0 Actions Projects 0 Wiki Security Insights
+staticpress-tailwind/source/admin/config.yml
+@thakkarhiral thakkarhiral footer edited
+5ff8a0c on Sep 20
+58 lines (58 sloc)  2.65 KB
+  
 backend:
   name: git-gateway
-  repo: sanampatel/staticpress-demo
+  repo: sanampatel/staticpress-tailwind
   branch: master
   squash_merges: true
 publish_mode: editorial_workflow
@@ -30,72 +47,29 @@ collections:
     slug: "{{slug}}"
     fields:
       - {label: "Title", name: "title", widget: "string", default: "Title"}
-      - {label: "Author Name", name: "authorname", widget: "string", required: false}
+      - {label: "Author Name", name: "authorname", widget: "string"}
       - {label: "Date", name: "date", widget: "date"}
       - {label: "SEOTitle", name: "seotitle", widget: "string", default: "SEO Title"}
       - {label: "SEO Keywords", name: "seokeywords", widget: "string", default: SEO Keywords}
       - {label: "SEO Description", name: "seodescription", widget: "string", default: SEO Description}
-      - {label: "Tag", name: "tags", widget: "relation", collection: 'tags', searchFields: ["title"], displayFields: ["title"], valueField: "title", multiple: true, default: ""}
+      - {label: "Tags", name: "tags", widget: "relation", collection: 'tags', searchFields: ["title"], displayFields: ["title"], valueField: "title", multiple: true, default: ""}
       - {label: "Categories", name: "categories", widget: "relation", collection: 'categories', searchFields: ["title"], displayFields: ["title"], valueField: "title", default: ""}
-      - {label: "Is Posts", name: "isPosts", widget: "boolean", default: true}
       - {label: "Image Filename", name: "image", widget: "image", required: true}
       - {label: "Comments", name: "comments", widget: "boolean", default: true}
-      - {label: "Description", name: "description", widget: "markdown"}
+      - {label: "Featured", name: "featured", widget: "boolean", default: false}
+      - {label: "IsPosts", name: "isPosts", widget: "hidden", default: true}
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "settings"
     label: "Settings"
     label_singular: "Setting"
     folder: "source/_settings"
-    create: false
+    create: true
     slug: "{{slug}}"
     fields:
-      - {label: "Title", name: "title", widget: "string", default: "Setting"}
-      - {label: "SEOTitle", name: "seotitle", widget: "string", default: "SEO Title"}
-      - {label: "SEO Keywords", name: "seokeywords", widget: "string", default: SEO Keywords}
-      - {label: "SEO Description", name: "seodescription", widget: "string", default: SEO Description}
-      - {label: "About author", name: "aboutauthor", widget: "string", default: "About author"}
-      - {label: "Post page title", name: "postpagetitle", widget: "string", default: "Post page title"}
+      - {label: "About author", name: "aboutauthor", widget: "markdown", default: "About author"}
+      - {label: "Logo", name: "logo", markdown: "image"}
+      - {label: "FbLink", name: "fblink", widget: "string"}
+      - {label: "TwitterLink:", name: "twitterlink", widget: "string"}
+      - {label: "InstagramLink", name: "instagramlink", widget: "string"}
       - {label: "Custom Header", name: "customheader", widget: "markdown"}
       - {label: "Custom Footer", name: "customfooter", widget: "markdown"}
-  - name: "customPages"
-    label: "CustomPages"
-    label_singular: "CustomPages"
-    folder: "source/_customPages"
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Permalink Override", name: "link", widget: "string", required: false}
-      - {label: "Description", name: "description", widget: "string"}
-      - {label: "SEOTitle", name: "seotitle", widget: "string", required: false}
-      - {label: "SEO keywords", name: "seokeywords", widget: "string", required: false}
-      - {label: "SEO description", name: "seodescription", widget: "string", required: false}
-      - {label: "Description", name: "description", widget: "markdown"}
-  - label: "Sliders"
-    name: "sliders"
-    folder: "source/_sliders"
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Images", name: "image", widget: "image"}
-  - label: "Nav"
-    name: "nav"
-    files:
-      - label: "Navigation"
-        name: "navigation"
-        delete: false
-        file: "source/navigation.json"
-        fields:
-          - label: "Items"
-            name: "items"
-            widget: "list"
-            fields:
-              - {label: "Text", name: "text", widget: string}
-              - {label: "Url", name: "url", widget: string}
-              - label: "MetaItems"
-                name: "metaitems"
-                widget: "list"
-                fields:
-                  - {label: "Text", name: "text", widget: string, required: false}
-                  - {label: "Url", name: "url", widget: string, required: false}
