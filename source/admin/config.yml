@@ -36,9 +36,13 @@ collections:
       - {label: "SEOTitle", name: "seotitle", widget: "string", default: "SEO Title"}
       - {label: "SEO Keywords", name: "seokeywords", widget: "string", default: SEO Keywords}
       - {label: "SEO Description", name: "seodescription", widget: "string", default: SEO Description}
+      
       - {label: "Tags", name: "tags", widget: "relation", collection: 'tags', searchFields: ["title"], displayFields: ["title"], valueField: "title", multiple: true, default: ""}
       - {label: "Categories", name: "categories", widget: "relation", collection: 'categories', searchFields: ["title"], displayFields: ["title"], valueField: "title", default: ""}
-      - {label: "Is Posts", name: "isPosts", widget: "boolean", default: true}
+      - {label: "Image Filename", name: "image", widget: "image", required: true}
+      - {label: "Comments", name: "comments", widget: "boolean", default: true}
+      - {label: "Description", name: "description", widget: "markdown"}
+      - {label: "Body", name: "body", widget: "markdown"}
   - name: "settings"
     label: "Settings"
     label_singular: "Setting"
