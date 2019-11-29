@@ -1,20 +1,3 @@
-Skip to content
-Search or jump to…
-
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@thakkarhiral 
-1
-00sanampatel/staticpress-tailwind
- Code Issues 0 Pull requests 0 Actions Projects 0 Wiki Security Insights
-staticpress-tailwind/source/admin/config.yml
-@thakkarhiral thakkarhiral footer edited
-5ff8a0c on Sep 20
-58 lines (58 sloc)  2.65 KB
-  
 backend:
   name: git-gateway
   repo: sanampatel/staticpress-tailwind
