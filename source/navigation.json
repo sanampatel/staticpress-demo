@@ -15,6 +15,10 @@
         {
           "text": "Contact Us",
           "url": "https://demo.staticpress.io/contact/"
+        },
+        {
+          "text": "New Titles",
+          "url": "https://demo.staticpress.io/new-titles/"
         }
       ]
     },
