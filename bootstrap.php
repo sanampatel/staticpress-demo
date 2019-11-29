@@ -99,7 +99,7 @@ function string_count($str, $counter = 160) {
 
         foreach ($words as $word) {
           
-            $word_len = strlen(trim($word));
+            $word_len = strlen(rtrim($word));
             $count += $word_len;
           
             $finalcount = strlen($out_str) + $word_len;
