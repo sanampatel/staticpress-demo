@@ -32,9 +32,9 @@ collections:
       - {label: "Title", name: "title", widget: "string", default: "Title"}
       - {label: "Author Name", name: "authorname", widget: "string", required: false}
       - {label: "Date", name: "date", widget: "date"}
-      - {label: "SEOTitle", name: "seotitle", widget: "string", default: "SEO Title"}
-      - {label: "SEO Keywords", name: "seokeywords", widget: "string", default: SEO Keywords}
-      - {label: "SEO Description", name: "seodescription", widget: "string", default: SEO Description}
+      - {label: "SEOTitle", name: "seotitle", widget: "string", default: "SEO Title", required: false}
+      - {label: "SEO Keywords", name: "seokeywords", widget: "string", default: SEO Keywords, required: false}
+      - {label: "SEO Description", name: "seodescription", widget: "string", default: SEO Description, required: false}
       - {label: "Tag", name: "tags", widget: "relation", collection: 'tags', searchFields: ["title"], displayFields: ["title"], valueField: "title", multiple: true, default: ""}
       - {label: "Categories", name: "categories", widget: "relation", collection: 'categories', searchFields: ["title"], displayFields: ["title"], valueField: "title", default: ""}
       - {label: "Is Posts", name: "isPosts", widget: "boolean", default: true}
@@ -50,13 +50,13 @@ collections:
     slug: "{{slug}}"
     fields:
       - {label: "Title", name: "title", widget: "string", default: "Setting"}
-      - {label: "SEOTitle", name: "seotitle", widget: "string", default: "SEO Title"}
-      - {label: "SEO Keywords", name: "seokeywords", widget: "string", default: SEO Keywords}
-      - {label: "SEO Description", name: "seodescription", widget: "string", default: SEO Description}
+      - {label: "SEOTitle", name: "seotitle", widget: "string", default: "SEO Title", required: false}
+      - {label: "SEO Keywords", name: "seokeywords", widget: "string", default: SEO Keywords, required: false}
+      - {label: "SEO Description", name: "seodescription", widget: "string", default: SEO Description, required: false}
       - {label: "About author", name: "aboutauthor", widget: "string", default: "About author"}
-      - {label: "Post page title", name: "postpagetitle", widget: "string", default: "Post page title"}
-      - {label: "Custom Header", name: "customheader", widget: "markdown"}
-      - {label: "Custom Footer", name: "customfooter", widget: "markdown"}
+      - {label: "Post page title", name: "postpagetitle", widget: "string", default: "Post page title", required: false}
+      - {label: "Custom Header", name: "customheader", widget: "markdown", required: false}
+      - {label: "Custom Footer", name: "customfooter", widget: "markdown", required: false}
   - name: "customPages"
     label: "CustomPages"
     label_singular: "CustomPages"

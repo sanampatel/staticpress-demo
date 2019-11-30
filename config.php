@@ -6,7 +6,7 @@ return [
 	'disqus_code' => 'staticpress-demo',
 	'sitename' => 'StaticPress',
 	'title' => 'StaticPress',
-	'mainUrl' => 'https://demo.staticpress.io',
+	'mainUrl' => 'http://localhost:8020',
 	'baseUrl' => 'https://demo.staticpress.io',
 	'siteAuthor' => 'Hence Media',
 	'site' => [
