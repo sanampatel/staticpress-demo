@@ -9,10 +9,12 @@
             </div>
     	@endif
     	<h3 class="article-title uk-margin-remove-bottom">
-	    	<a
+	    	{{-- <a
 			href="{{ $post->getUrl() }}"
 			title="Read more - {{ $post->title }}"
-			class="text-black font-extrabold">{{ ucwords($post->title) }}</a>
+			class="text-black font-extrabold">{{ ucwords($post->title) }}</a> --}}
+            <a href="{{ $post->slug ? $post->slug : $post->getUrl() }}" title="Read more - {{ $post->title }}"
+            class="text-black font-extrabold">{{ ucwords($post->title) }}</a>
 	    </h3>
 	    <p>
 			@if ($post->author)

@@ -38,6 +38,7 @@ collections:
       - {label: "Tag", name: "tags", widget: "relation", collection: 'tags', searchFields: ["title"], displayFields: ["title"], valueField: "title", multiple: true, default: ""}
       - {label: "Categories", name: "categories", widget: "relation", collection: 'categories', searchFields: ["title"], displayFields: ["title"], valueField: "title", default: ""}
       - {label: "Is Posts", name: "isPosts", widget: "boolean", default: true}
+      - {label: "Slug", name: "slug", widget: "string", required: false}
       - {label: "Image Filename", name: "image", widget: "image", required: true}
       - {label: "Comments", name: "comments", widget: "boolean", default: true}
       - {label: "Description", name: "description", widget: "markdown"}
