@@ -11,6 +11,7 @@ tags:
   - staticpress
 categories: Comment
 isPosts: true
+slug: about-staticpres
 image: /source/images/about-2.png
 comments: true
 description: >-
