@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "05a3b4543aa30b8d206d32a2d52c36bb",
+    "content-hash": "4537eeeec9f60a5df225fa147d803316",
     "packages": [
         {
             "name": "doctrine/inflector",
@@ -912,6 +912,55 @@
                 "Sitemap"
             ],
             "time": "2019-03-27T09:31:20+00:00"
+        },
+        {
+            "name": "sanampatel/staticpress",
+            "version": "v1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sanampatel/staticpress.git",
+                "reference": "72f2c413c99dcd1428cc8121b5e02325d4612e3e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sanampatel/staticpress/zipball/72f2c413c99dcd1428cc8121b5e02325d4612e3e",
+                "reference": "72f2c413c99dcd1428cc8121b5e02325d4612e3e",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1.3",
+                "samdark/sitemap": "^2.2",
+                "tightenco/jigsaw": "^1.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "SanamPatel\\StaticPress\\": "src/"
+                },
+                "files": [
+                    "src/Functions/helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sanam Patel",
+                    "email": "sanam@hencemedia.com"
+                }
+            ],
+            "description": "StaticPress.io is static CMS which works with Jigsaw staticsite generator also supports forestry",
+            "homepage": "https://github.com/sanampatel/staticpress",
+            "keywords": [
+                "NetlifyCMS",
+                "StaticPress",
+                "cms",
+                "forestry",
+                "static"
+            ],
+            "time": "2019-12-25T12:24:21+00:00"
         },
         {
             "name": "symfony/console",

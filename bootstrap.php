@@ -1,8 +1,11 @@
 <?php
 
-$events->afterBuild(App\Listeners\GenerateSitemap::class);
-$events->afterBuild(App\Listeners\GenerateIndex::class);
-$events->beforeBuild(App\Listeners\PostCount::class);
+$events->beforeBuild(SanamPatel\StaticPress\PostCount::class);
+$events->afterCollections(SanamPatel\StaticPress\TagCount::class);
+// $events->afterCollections(SanamPatel\StaticPress\CategoryCount::class);
+$events->afterBuild(SanamPatel\StaticPress\GenerateSitemap::class);
+$events->afterBuild(SanamPatel\StaticPress\GenerateIndex::class);
+$events->afterBuild(SanamPatel\StaticPress\SlugChecker::class);
 
 use TightenCo\Jigsaw\Jigsaw;
 
